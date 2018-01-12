@@ -60,11 +60,13 @@ h2{
 }
 
 footer{
+	height:10rem;
 	display:flex;
 	.text-center{
+		margin-top:2rem;
 	text-align:center;
 	p{
-		margin-bottom:2%;
+		margin-bottom:2rem;
 	}
 	.button{
 			border:1px solid brack;

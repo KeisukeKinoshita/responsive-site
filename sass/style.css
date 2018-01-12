@@ -41,11 +41,13 @@ body {
       padding: 80px 0; }
 
 footer {
+  height: 10rem;
   display: flex; }
   footer .text-center {
+    margin-top: 2rem;
     text-align: center; }
     footer .text-center p {
-      margin-bottom: 2%; }
+      margin-bottom: 2rem; }
     footer .text-center .button {
       border: 1px solid brack;
       color: red;
