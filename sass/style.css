@@ -7,35 +7,38 @@ body {
   font-family: "游ゴシック",YuGothic,"メイリオ",Verdana,"Hiragino Kaku Gothic ProN", Meiryo,sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
-  letter-spacing: 1em;
   color: #4c4c4c;
   background-color: fdfcf6; }
 
 /*個別*/
-img {
-  height: 500px;
-  max-width: 100%; }
+.flex-image {
+  background-image: url("../images/img_header.jpg");
+  background-size: cover;
+  background-position: center center; }
 
+#main .title-box {
+  margin: 60px 0; }
 #main .text-center {
-  text-align: center; }
-  #main .text-center p {
-    display: float; }
+  text-align: center;
+  display: float; }
 #main .container {
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 10px 0;
-  border: 2px dotted red; }
+  padding: 10px 0; }
   #main .container .content-box-inner {
+    width: 30%;
     border: 2px solid green;
     margin: 0 auto;
     box-sizing: border-box; }
-    #main .container .content-box-inner h3 {
-      background-color: yellow; }
-    #main .container .content-box-inner p {
-      background-color: blue; }
+    #main .container .content-box-inner .title {
+      padding: 30px 0;
+      background-color: gray; }
+    #main .container .content-box-inner .content-box {
+      background-color: fdfcf6;
+      padding: 80px 0; }
 
 footer {
   display: flex; }
@@ -49,11 +52,18 @@ footer {
       text-align: center;
       border-radius: 20%; }
 
+@media (min-width: 769px) {
+  .flex-image {
+    height: 500px; } }
 @media (max-width: 768px) {
-  img {
+  .flex-image {
     height: 250px; }
 
   #main .container {
-    flex-direction: column; } }
+    flex-direction: column; }
+    #main .container .content-box-inner {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
